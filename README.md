@@ -92,7 +92,7 @@ B, `[12:18]` 2p core site A, `[18:24]` 2p core site B.
 - A Cluster-Anderson extension of the same model (shared bridging-O
   bath, covalency and charge-transfer satellites) lives in the companion
   repository
-  [`topological-magnons-Y2V2O7/paper/vv_dimer_pure_Y2V2O7`](https://github.com/liamlts/topological-magnons-Y2V2O7).
+  [`topological-magnons-Y2V2O7/paper/vv_dimer_anderson_Y2V2O7`](https://github.com/liamlts/topological-magnons-Y2V2O7/tree/main/vv_dimer_anderson_Y2V2O7).
 
 ## Citation
 
