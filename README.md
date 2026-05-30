@@ -63,6 +63,12 @@ dominate).  Outputs land in `Figures/`:
 - `fig_dimer_pure_highE.{pdf,png}` — same layout extended to 6 eV,
   showing the d–d multiplet structure
 
+The high-energy view, showing the full d–d multiplet structure out to 6 eV:
+
+<p align="center">
+  <img src="Figures/fig_dimer_pure_highE.png" width="720" alt="V-V dimer RIXS spectrum, extended to 6 eV">
+</p>
+
 ## Hilbert space
 
 | state        | basis                          | dimension |
