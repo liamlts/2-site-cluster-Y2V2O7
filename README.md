@@ -5,10 +5,10 @@
 
 Exact Kramers–Heisenberg RIXS calculation on a two-site V⁴⁺–V⁴⁺ cluster
 at the V L₃ edge (~515 eV), with parameters appropriate for the
-pyrochlore Y₂V₂O₇.  The calculation is fully *ab initio* within the
-cluster: no phenomenological peaks, no projected pseudospins — every
-feature in the output spectrum emerges from exact diagonalisation of
-the full 24 spin-orbital Hamiltonian.
+pyrochlore Y₂V₂O₇. The calculation is *ab initio* within the cluster:
+no phenomenological peaks and no projected pseudospins, with every feature
+in the output spectrum coming from exact diagonalisation of the full
+24 spin-orbital Hamiltonian.
 
 <p align="center">
   <img src="Figures/fig_dimer_pure.png" width="720" alt="V-V dimer RIXS spectrum">
@@ -17,16 +17,16 @@ the full 24 spin-orbital Hamiltonian.
 ## What the calculation does
 
 - Builds the full 3d + 2p Slater–Coulomb + SOC + crystal-field + inter-site
-  hopping Hamiltonian in the real cubic basis (via **edrixs**).
+  hopping Hamiltonian in the real cubic basis (via edrixs).
 - Diagonalises the initial (2-electron) and intermediate (3-electron,
   one core hole per site) Hamiltonians.
 - Computes the Kramers–Heisenberg scattering amplitude at resonance with
-  full Cartesian polarisation control → σσ, σπ, πσ, ππ channels.
+  full Cartesian polarisation control, giving the σσ, σπ, πσ, and ππ channels.
 - Produces XAS, polarisation-resolved RIXS line cuts, and a 2D RIXS
   incident-energy map, with instrument broadening applied.
 
-The singlet–triplet splitting J ≈ 8 meV is **not** put in by hand — it
-emerges as an eigenvalue gap of the full cluster Hamiltonian.
+The singlet–triplet splitting J ≈ 8 meV is not an input; it emerges as an
+eigenvalue gap of the full cluster Hamiltonian.
 
 ## Parameters (Y₂V₂O₇-like)
 
@@ -56,11 +56,11 @@ python generate_dimer_pure.py
 ```
 
 Runtime is ~30 s on a laptop (two 1320×1320 dense diagonalisations
-dominate).  Outputs land in `Figures/`:
+dominate). Outputs land in `Figures/`:
 
-- `fig_dimer_pure.{pdf,png}` — low-energy publication view (XAS +
-  RIXS line cut + 2D map, 0 → 100 meV)
-- `fig_dimer_pure_highE.{pdf,png}` — same layout extended to 6 eV,
+- `fig_dimer_pure.{pdf,png}`: low-energy view (XAS, RIXS line cut, and
+  2D map; 0 to 100 meV)
+- `fig_dimer_pure_highE.{pdf,png}`: same layout extended to 6 eV,
   showing the d–d multiplet structure
 
 The high-energy view, showing the full d–d multiplet structure out to 6 eV:
@@ -81,10 +81,10 @@ B, `[12:18]` 2p core site A, `[18:24]` 2p core site B.
 
 ## Figure panels
 
-- **a** — XAS for LV (σ) and LH (π) incidence, 512 → 517 eV
-- **b** — RIXS at resonance (LV-in / LH-in, isotropic out), with
+- a: XAS for LV (σ) and LH (π) incidence, 512–517 eV
+- b: RIXS at resonance (LV-in / LH-in, isotropic out), with
   unbroadened sticks overlaid
-- **c** — 2D RIXS incident-energy map, 512 → 517 eV, with feature
+- c: 2D RIXS incident-energy map, 512–517 eV, with feature
   labels (J = singlet–triplet gap, SOC₁,₂ = d–d excitations that track
   E_res)
 
