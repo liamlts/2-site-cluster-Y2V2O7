@@ -128,12 +128,12 @@ Our calculation is the opposite trade-off:
 
 | aspect                    | single ion | 2-site cluster (this)  | Anderson impurity |
 |---------------------------|:----------:|:----------------------:|:-----------------:|
-| on-site multiplets        | ✅         | ✅                     | ✅                |
-| intrinsic d-d excitations | ✅         | ✅                     | ✅                |
-| intersite magnon / J peak | ❌         | ✅                     | ❌ (mean field)   |
-| charge-transfer screening | ❌         | ❌                     | ✅                |
+| on-site multiplets        | yes        | yes                    | yes               |
+| intrinsic d-d excitations | yes        | yes                    | yes               |
+| intersite magnon / J peak | no         | yes                    | no (mean field)   |
+| charge-transfer screening | no         | no                     | yes               |
 | system size scaling       | trivial    | `C(12,2)·C(12,12) = 66`| large (bath fit)  |
-| realistic L₃ lineshape    | partial    | partial                | ✅                |
+| realistic L₃ lineshape    | partial    | partial                | yes               |
 
 ## 6. Polarization conventions used in the figure
 
